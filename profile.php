@@ -18,12 +18,35 @@ if (!$_SESSION['user']) {
     <table class="table">
         <thead>
         <tr>
-            <th scope="col">select</th>
-            <th scope="col">id</th>
-            <th scope="col">User</th>
-            <th scope="col">Date registration</th>
-            <th scope="col">Last login</th>
-            <th scope="col">Status</th>
+            <th scope="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        BLOCK ALL
+                    </label>
+                </div>
+            </th>
+            <th scope="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        UMBLOCK ALL
+                    </label>
+                </div>
+            </th>
+            <th scope="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        DELETE ALL
+                    </label>
+                </div>
+            </th>
+            <th scope="col">ID</th>
+            <th scope="col">USER</th>
+            <th scope="col">DATE REGISTRATION</th>
+            <th scope="col">LAST DATE LOGIN</th>
+            <th scope="col">STATUS</th>
         </tr>
         </thead>
         <tbody>
@@ -31,21 +54,24 @@ if (!$_SESSION['user']) {
             <th scope="row">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        BLOCK
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        DELETE
-                    </label>
                 </div>
             </th>
-            <td><?php echo 'user' ?></td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
+            <th scope="row">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                </div>
+            </th>
+            <th scope="row">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                </div>
+            </th>
+            <td><?php echo 'ID' ?></td>
+            <<td><?php echo 'USER' ?></td>
+            <td><?php echo 'DATE' ?></td>
+            <td><?php echo 'DATE LOGIN' ?></td>
+            <td><?php echo 'STATUS' ?></td>
+         </tr>
         <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
@@ -60,9 +86,7 @@ if (!$_SESSION['user']) {
         </tbody>
     </table>
     <form>
-        <h2 style="margin: 10px 0;"><?= $_SESSION['user']['full_name'] ?></h2>
-        <a href="#"><?= $_SESSION['user']['email'] ?></a>
-        <a href="vendor/logout.php" class="logout">Выход</a>
+
     </form>
 
 </body>
