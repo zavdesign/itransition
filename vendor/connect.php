@@ -1,5 +1,5 @@
 <?php
-
+    require_once('users.php');
     $connect = mysqli_connect('localhost', 'root', 'root', 'task3');
 
     if (!$connect) {

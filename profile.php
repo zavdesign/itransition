@@ -23,8 +23,7 @@ $users = include_once('vendor/users.php');
 
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
           <div class="col-md-3 text-end">
-<!--            <button type="button" class="btn btn-outline-primary me-2">Разлогинится</button>-->
-            <button type="button" class="btn btn-primary">Выйти</button>
+          <a href='vendor/logout.php'>Выход</a>
         </div>
     </header>
 
@@ -86,17 +85,17 @@ $users = include_once('vendor/users.php');
             <td><?php echo 'DATE LOGIN' ?></td>
             <td><?php echo 'STATUS' ?></td>
          </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-        </tr>
+<!--        <tr>-->
+<!--            <th scope="row">2</th>-->
+<!--            <td>Jacob</td>-->
+<!--            <td>Thornton</td>-->
+<!--            <td>@fat</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <th scope="row">3</th>-->
+<!--            <td colspan="2">Larry the Bird</td>-->
+<!--            <td>@twitter</td>-->
+<!--        </tr>-->
         </tbody>
     </table>
     <form>
